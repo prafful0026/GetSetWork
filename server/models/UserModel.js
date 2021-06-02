@@ -23,13 +23,10 @@ const UserSchema = new Schema(
       required:true,
       enum: ["freelancer", "client", "root"],
     },
+    profilePicUrl:{
+        type:String
+    },
     projects: [{ project: { type: Schema.Types.ObjectId, ref: "Project" } }],
-    resetToken: {
-      type: String,
-    },
-    expireToken: {
-      type: Date,
-    },
   },
   {
     timestamps: true,

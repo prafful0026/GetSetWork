@@ -2,18 +2,18 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema(
+const FreelancerSchema = new Schema(
   {
     user: {
       type: Schema.Types.ObjectId,
       ref: "User",
     },
-    knowledge: [
+    skills: [
       {
         title: {
           type: String,
-        },
-      },
+        }
+      }
     ],
     
   },
@@ -22,6 +22,6 @@ const UserSchema = new Schema(
   }
 );
 
-const User = mongoose.model("User", UserSchema);
+const Freelancer = mongoose.model("Freelancer", FreelancerSchema);
 
-export default User;
+export default Freelancer;
