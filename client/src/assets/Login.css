@@ -1,0 +1,15 @@
+.login{
+    position: relative;
+}
+
+.brand{
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 2vh 15vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vh;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: 0px 2px 8px 0px grey;
+    z-index: 9;
+}
