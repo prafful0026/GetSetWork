@@ -79,7 +79,7 @@ const Register = () => {
                 name : name,
                 email : username,
                 password : password,
-                role : "client"
+                role : "freelancer"
             })
             .then((res) => {
                 console.log(res.data);
