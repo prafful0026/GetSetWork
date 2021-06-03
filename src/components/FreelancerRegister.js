@@ -4,7 +4,6 @@ import axios from 'axios';
 import '../assets/Login.css';
 
 const Register = () => {
-    
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -93,9 +92,7 @@ const Register = () => {
                     handleSettingError(error.response.data, false);
                 },5000);
             });
-            }
-
-            else{
+            }else{
                 handleSettingError("Password does not match.", true);
                 setTimeout(() => {
                     handleSettingError("Password does not match.", false);
