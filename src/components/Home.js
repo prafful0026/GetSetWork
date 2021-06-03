@@ -19,7 +19,7 @@ const Home = () => {
                 </span>
                 <div className="home-buttons">
                     <div className="home-btn">Join as Freelancer</div>
-                    <div className="home-btn">Hire a Freelancer</div>
+                    <div className="home-btn"><Link to={'/user/register'} >Hire a Freelancer</Link></div>
                 </div>
 
             </div>

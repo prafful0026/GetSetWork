@@ -17,7 +17,7 @@ app.use(express.json())
 app.get("/", (req, res) => {
     res.send("yo");
   });
-  app.use("/api/user",UserRoutes)
+  app.use("/api/user",UserRoutes);
   
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, console.log(`server on ${process.env.NODE_ENV} on ${PORT}`));

@@ -3,6 +3,7 @@
 }
 
 .brand{
+    position: relative;
     box-sizing: border-box;
     width: 100vw;
     padding: 2vh 15vw;
@@ -10,6 +11,171 @@
     font-size: 3.5vh;
     letter-spacing: 2px;
     font-weight: 600;
-    box-shadow: 0px 2px 8px 0px grey;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
     z-index: 9;
 }
+
+.form-div{
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f7f7;
+}
+
+
+.form{
+    width: 95vw;
+    padding: 4rem 3rem;
+    /* border-radius: 1rem; */
+    box-sizing: border-box;
+    max-width: 500px;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    background-color: #ffffff;
+}
+
+.form-header{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.input-div{
+    position: relative;
+    height: 48px;
+    margin-top: 1.5rem;
+}
+
+.form-input{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border:1px solid blue;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 2.3rem;
+    background: none;
+    z-index: 1;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    
+}
+
+.form-label{
+    position: absolute;
+    left:2.3rem;
+    top:0.75rem;
+    background-color: white;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+.form-button{
+    display: block;
+    margin-left:auto;
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: #4e4ae8;
+    color:white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-family: "Montserrat";
+}
+
+.form-button:hover{
+    background-color: #3735cc;
+}
+
+.form-input:focus + .form-label{
+    top:-0.65rem;
+    left:1rem;
+    font-size: 1rem;
+    z-index: 10;
+    color: blue;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
+    top:-0.65rem;
+    left:0.8rem;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+.form-input:focus{
+    border: 2px solid blue;
+}
+
+.password-toggler{
+    font-size: 1rem;
+    color: #989898;
+    position: absolute;
+    right:1rem;
+    top:0.85rem;
+    background-color: transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 10;
+    color: blue;
+    opacity: 0.6;
+}
+
+.input-icon{
+    position: absolute;
+    left:1rem;
+    top:0.75rem;
+    background-color: transparent;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    color: blue;
+}
+
+.error{
+    background-color: black;
+    padding:1rem 2.5rem 1rem 1rem;
+    transition: 0.5s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: red;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border-radius: 0.5rem;
+}
+
+.fa-times-circle{
+    position: absolute;
+    right: 1rem;
+    top:1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.fa-spinner{
+    color:white;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media screen and (max-width:567px){
+    .form{
+        padding: 2rem 1.5rem;
+    }
+} 
