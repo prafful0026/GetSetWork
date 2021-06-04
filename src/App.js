@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Register from './components/Register.js';
 import NotFoundError from './components/NotFoundError.js';
 import NavBar from './components/NavBar';
+import FreelancerHome from './components/FreelancerHome';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/user/home" component={Register} />
-          <Route exact path="/freelancer/home" component={Register} />
+          <Route exact path="/freelancer/home" component={FreelancerHome} />
           <Route exact path="/:role/register" render={(props)=>
             props.match.params.role === "freelancer" || props.match.params.role === "client" ? (<Register props={props} />) : (<Redirect to="/*" />)
           } />

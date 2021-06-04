@@ -1,0 +1,58 @@
+.freelancerHome{
+    margin-top: 8vh;
+    display: flex;
+    height: 92vh;
+    width: 100vw;
+    position: fixed;
+}
+
+p{
+    margin: 0;
+}
+
+.freelancer_photo>img{
+    width: 10rem;
+}
+
+.freelancerHome_left{
+    margin: 2vh;
+    flex: 0.2;
+    align-self: center;
+    border-radius: 0.5rem;
+    width: 20vw;
+    min-width: 200px;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: justify;
+    padding: 1rem 2rem;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    background-color: #ffffff;
+}
+
+.freelancerHome_right{
+    margin: 2vh;
+    flex: 0.8;
+    overflow: scroll;
+}
+.freelancerHome_left>div{
+    margin: 2vh 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
+@media screen and (max-width:900px){
+    .freelancerHome_right{
+        flex: 1;
+    }
+
+    .freelancerHome_left{
+        display: none;
+    }
+} 
