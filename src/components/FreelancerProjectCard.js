@@ -1,10 +1,10 @@
 import React from 'react'
 import '../assets/FreelancerProjectCard.css'
 
-export default function FreelancerProjectCard() {
+export default function FreelancerProjectCard({none}) {
     return (
         <div className='freelancerProjectCard'>
-            <div className="freelancerProjectCard_Carousel"><img src="https://i.ytimg.com/vi/195RY7jCuZg/maxresdefault.jpg" alt="display photo" /></div>
+            <div style={{display:none}} className="freelancerProjectCard_Carousel"><img src="https://i.ytimg.com/vi/195RY7jCuZg/maxresdefault.jpg" alt="display photo" /></div>
             <div className="freelancerProjectCard_data">
                 <p className="freelancerProjectCard_heading"><strong>Shopping App in Java/Kotlin</strong></p>
                 <p className="freelancerProjectCard_discription">
