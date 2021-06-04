@@ -4,7 +4,7 @@ import '../assets/FreelancerProjectCard.css'
 export default function FreelancerProjectCard() {
     return (
         <div className='freelancerProjectCard'>
-            <div className="freelancerProjectCard_Carousel"><img src="https://s3.amazonaws.com/pixpa.com/com/articles/1528190832-605803-lake-irene-1679708-1280jpg.png" alt="display photo" /></div>
+            <div className="freelancerProjectCard_Carousel"><img src="https://i.ytimg.com/vi/195RY7jCuZg/maxresdefault.jpg" alt="display photo" /></div>
             <div className="freelancerProjectCard_data">
                 <p className="freelancerProjectCard_heading"><strong>Shopping App in Java/Kotlin</strong></p>
                 <p className="freelancerProjectCard_discription">
