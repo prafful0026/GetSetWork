@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register.js';
 import NotFoundError from './components/NotFoundError.js';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/:role/register" render={(props)=>
             props.match.params.role === "freelancer" || props.match.params.role === "client" ? (<Register props={props} />) : (<Redirect to="/*" />)
           } />
+          <Route path = "/navbar" component={NavBar} />  {/*for dev purpose only*/}
           <Route path = "/*" component={NotFoundError} />
         </Switch>
       </div>
