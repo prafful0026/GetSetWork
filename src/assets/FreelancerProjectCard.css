@@ -29,6 +29,7 @@
 .freelancerProjectCard_data{
     align-self: stretch;
     flex:0.7;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

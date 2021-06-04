@@ -27,14 +27,14 @@ export default function FreelancerHome() {
                     </div>
                 </div>
                 <div className="freelancerHome_right">
+                    <FreelancerProjectCard none={'none'}/>
+                    <FreelancerProjectCard/>
+                    <FreelancerProjectCard none={'none'}/>
+                    <FreelancerProjectCard none={'none'}/>
                     <FreelancerProjectCard/>
                     <FreelancerProjectCard/>
                     <FreelancerProjectCard/>
-                    <FreelancerProjectCard/>
-                    <FreelancerProjectCard/>
-                    <FreelancerProjectCard/>
-                    <FreelancerProjectCard/>
-                    <FreelancerProjectCard/>
+                    <FreelancerProjectCard none={'none'}/>
                     <FreelancerProjectCard/>
 
                 </div>
