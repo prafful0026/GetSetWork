@@ -11,6 +11,7 @@ p{
 }
 
 .freelancer_photo>img{
+    cursor: pointer;
     width: 10rem;
 }
 
