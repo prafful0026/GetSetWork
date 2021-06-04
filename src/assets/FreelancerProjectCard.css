@@ -4,9 +4,63 @@
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 20%);
 }
 
-@media screen and (max-width:900px){
+.freelancerProjectCard_Carousel>img{
+    width: 20rem;
+    max-height: 38vh;
+}
 
+.freelancerProjectCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.freelancerProjectCard>div{
+    margin: 1em;
+}
+
+.freelancerProjectCard_Carousel{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex:0.3
+}
+
+.freelancerProjectCard_data{
+    align-self: stretch;
+    flex:0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.freelancerProjectCard_data>p{
+    margin-bottom: 1em;
+}
+
+.freelancerProjectCard_discription{
+    overflow: scroll;
+}
+
+@media screen and (max-width:1100px){
+    .freelancerProjectCard_Carousel>img{
+        width: 15em;
+    }
+} 
+
+@media screen and (max-width:900px){
     .freelancerProjectCard{
         margin: 1rem 5vw;
     }
+} 
+
+@media screen and (max-width:650px){
+    .freelancerProjectCard{
+        height: 60vh;
+        flex-direction: column;
+        overflow: hidden;
+    }   
+    .freelancerProjectCard_data{
+        overflow: scroll;
+    } 
 } 
