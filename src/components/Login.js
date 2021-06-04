@@ -28,7 +28,7 @@ const Login = () => {
     );
 
     const submitButton = loading ? (
-            <button className="form-button"><i className="fas fa-spinner" ></i></button>
+            <button className="form-button" disabled><i className="fas fa-spinner" ></i></button>
         ) : (
             <button className="form-button">Log In</button>
         )
