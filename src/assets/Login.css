@@ -65,7 +65,7 @@
     z-index: 1;
     box-sizing: border-box;
     letter-spacing: 1px;
-    
+    font-family: inherit;
 }
 
 .form-label{

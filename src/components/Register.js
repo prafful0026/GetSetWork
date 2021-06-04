@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../assets/Login.css';
 
-const Register = () => {
-    
+const Register = ({props}) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -80,7 +79,7 @@ const Register = () => {
                 name : name,
                 email : username,
                 password : password,
-                role : "client"
+                role : props.match.params.role
             })
             .then((res) => {
                 console.log(res.data);
