@@ -6,7 +6,7 @@ const protect = (req, res, next) => {
       return res.status(401).send(`Unauthorized`);
     }
 
-    const { userId } = jwt.verify(req.headers.authorization, process.env.jwtSecret);
+    const { userId } = jwt.verify(req.headers.authorization, process.env.jwtsecret);
 
     req.userId = userId;
     next();

@@ -4,7 +4,6 @@ import axios from 'axios';
 import '../assets/Login.css';
 
 const Register = () => {
-    
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -31,7 +30,7 @@ const Register = () => {
     );
 
     const submitButton = loading ? (
-            <button className="form-button" disabled><i className="fas fa-spinner" ></i></button>
+            <button className="form-button"><i className="fas fa-spinner" ></i></button>
         ) : (
             <button className="form-button">Sign Up</button>
         )
@@ -80,7 +79,7 @@ const Register = () => {
                 name : name,
                 email : username,
                 password : password,
-                role : "client"
+                role : "freelancer"
             })
             .then((res) => {
                 console.log(res.data);
@@ -93,9 +92,7 @@ const Register = () => {
                     handleSettingError(error.response.data, false);
                 },5000);
             });
-            }
-
-            else{
+            }else{
                 handleSettingError("Password does not match.", true);
                 setTimeout(() => {
                     handleSettingError("Password does not match.", false);
