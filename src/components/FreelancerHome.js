@@ -10,7 +10,7 @@ export default function FreelancerHome() {
             <NavBar/>
             <div className='freelancerHome'>
                 <div className="freelancerHome_left">
-                    <div className="freelancer_photo"><img src="https://d.newsweek.com/en/full/297016/mia-khalifa.jpg?w=1600&h=1200&q=88&f=05e38c93735f104017d3d79e772785a1" alt="display photo" /></div>
+                    <div className="freelancer_photo"><img src="https://media-exp3.licdn.com/dms/image/C4E03AQHhhPDR-pWxnw/profile-displayphoto-shrink_800_800/0/1607581026296?e=1628121600&v=beta&t=5xqKd8iFWdyO1-gp_nWd6_t0CUmVkB27sKMVSe_gTaQ" alt="display photo" /></div>
                     <div className="freelancer_about">
                         <strong>About</strong>
                         <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, 
