@@ -43,6 +43,33 @@
     overflow: scroll;
 }
 
+.freelancerProjectCard_heading span{
+    font-size: small;
+    font-weight: 500;
+    
+}
+
+.freelancerProjectCard_heading strong{
+    font-size:larger;
+}
+
+  /* width */
+.freelancerProjectCard_discription::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.freelancerProjectCard_discription::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+.freelancerProjectCard_discription::-webkit-scrollbar-thumb {
+    border-radius: 10rem;
+    background: rgb(151, 135, 135); 
+  }
+
+
 @media screen and (max-width:1100px){
     .freelancerProjectCard_Carousel>img{
         width: 15em;
@@ -57,11 +84,11 @@
 
 @media screen and (max-width:650px){
     .freelancerProjectCard{
-        height: 60vh;
+        height:70vh;
         flex-direction: column;
-        overflow: hidden;
+        /* overflow: visible; */
     }   
     .freelancerProjectCard_data{
         overflow: scroll;
     } 
-} 
+}
