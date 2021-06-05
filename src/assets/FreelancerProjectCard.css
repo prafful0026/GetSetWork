@@ -2,6 +2,7 @@
     height: 40vh;
     margin:0.5rem 5vw;
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 20%);
+    text-align: justify;
 }
 
 .freelancerProjectCard_Carousel>img{
@@ -36,6 +37,7 @@
 }
 
 .freelancerProjectCard_data>p{
+    padding-right: 4px;
     margin-bottom: 1em;
 }
 

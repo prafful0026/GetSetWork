@@ -8,10 +8,8 @@ export default function FreelancerHome() {
 
     const handleYourProjectClick = () => {
         if(yourProjectModal){
-            console.log(yourProjectModal);
             setYourProjectModal(false)
         }else{
-            console.log(yourProjectModal);
             setYourProjectModal(true)
         }
     }
@@ -24,17 +22,18 @@ export default function FreelancerHome() {
             </div>
             {yourProjectModal&&(
             <div>
-                <div className="modalBackground"></div>
+                <div onClick={handleYourProjectClick} className="modalBackground"></div>
                 <div className="freelancerHome_yourProject">
-                <FreelancerProjectCard none={'none'}/>
-                        <FreelancerProjectCard/>
-                        <FreelancerProjectCard none={'none'}/>
-                        <FreelancerProjectCard none={'none'}/>
-                        <FreelancerProjectCard/>
-                        <FreelancerProjectCard/>
-                        <FreelancerProjectCard/>
-                        <FreelancerProjectCard none={'none'}/>
-                        <FreelancerProjectCard/>
+                    <h1 style={{paddingLeft:'5vw'}}>Your Projects</h1>
+                    <FreelancerProjectCard none={'none'}/>
+                    <FreelancerProjectCard/>
+                    <FreelancerProjectCard none={'none'}/>
+                    <FreelancerProjectCard none={'none'}/>
+                    <FreelancerProjectCard/>
+                    <FreelancerProjectCard/>
+                    <FreelancerProjectCard/>
+                    <FreelancerProjectCard none={'none'}/>
+                    <FreelancerProjectCard/>
                 </div>
             </div>
             )}
