@@ -4,10 +4,14 @@ import '../assets/FreelancerProjectCard.css'
 export default function FreelancerProjectCard({none}) {
     return (
         <div className='freelancerProjectCard'>
-            <div style={{display:none}} className="freelancerProjectCard_Carousel"><img src="https://i.ytimg.com/vi/195RY7jCuZg/maxresdefault.jpg" alt="display photo" /></div>
+            <div style={{display:none}} className="freelancerProjectCard_Carousel"><img src="https://i.ytimg.com/vi/195RY7jCuZg/maxresdefault.jpg" alt="" /></div>
             <div className="freelancerProjectCard_data">
-                <p className="freelancerProjectCard_heading"><strong>Shopping App in Java/Kotlin <br/><span>Ravish Kumar</span></strong></p>
-                {/* <p className="freelancerProjectCard_clientName"><strong></strong></p> */}
+                <p className="freelancerProjectCard_heading">
+                    <strong>
+                        Shopping App in Java/Kotlin <br/>
+                    </strong>
+                    <span>Ravish Kumar</span>
+                </p>
                 <p className="freelancerProjectCard_discription">
                     lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud

@@ -56,7 +56,7 @@
 }
 
   /* width */
-.freelancerProjectCard_discription::-webkit-scrollbar {
+.freelancerProjectCard_discription:hover::-webkit-scrollbar {
     width: 4px;
 }
 
